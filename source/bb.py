@@ -4,7 +4,7 @@
 My attempt to learn Python and numpy through
 development of an audio dsp-library.
 
-Author: Johan Öfverstedt
+Author: Johan Ofverstedt
 License: BSD
 """
 
@@ -61,7 +61,7 @@ class DiscreteCircular:
         self.wrap_value()
 
     def frac(self):
-        return float(self.value) / float(self.period)
+        return self.value / float(self.period)
 
     def wrap_value(self):
         if self.value >= self.period:
